@@ -4,6 +4,8 @@ using SmartSchool.API.Data;
 using SmartSchool.API.V1.Dtos;
 using SmartSchool.API.Models;
 using System.Collections.Generic;
+using System.Threading.Tasks;
+using SmartSchool.API.Helpers;
 
 namespace SmartSchool.API.V1.Controllers
 {   
@@ -34,11 +36,13 @@ namespace SmartSchool.API.V1.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public IActionResult Get()
+        public async Task<IActionResult> Get([FromQuery] PageParams pageParams)
         {
-            var professores = _repository.GetAllProfessores(true);
+            var professores = await _repository.GetAllProfessoresAsync(pageParams, true);
+            var professoresResult = _mapper.Map<IEnumerable<ProfessorDto>>(professores);
 
-            return Ok(_mapper.Map<IEnumerable<ProfessorDto>>(professores));
+            Response.AddPagination(professores.CurrentPage, professores.PageSize, professores.TotalCount, professores.TotalPages);
+            return Ok(professoresResult);
         }
 
         /// <summary>
