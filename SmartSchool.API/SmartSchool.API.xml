@@ -1,0 +1,280 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SmartSchool.API</name>
+    </assembly>
+    <members>
+        <member name="T:SmartSchool.API.V1.Controllers.AlunoController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SmartSchool.API.V1.Controllers.AlunoController.#ctor(SmartSchool.API.Data.IRepository,AutoMapper.IMapper)">
+            <summary>
+            
+            </summary>
+            <param name="repository"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:SmartSchool.API.V1.Controllers.AlunoController.Get">
+            <summary>
+            Método responsável por retornar todos os alunos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.API.V1.Controllers.AlunoController.Get(System.Int32)">
+            <summary>
+            Método responsável por retornar apenas um único registro
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.API.V1.Controllers.AlunoController.Post(SmartSchool.API.V1.Dtos.AlunoRegistrarDto)">
+            <summary>
+            Método responsável por criar um novo aluno
+            </summary>
+            <param name="alunoDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.API.V1.Controllers.AlunoController.Put(System.Int32,SmartSchool.API.V1.Dtos.AlunoRegistrarDto)">
+            <summary>
+            Método responsável por atualizar um aluno já existente
+            </summary>
+            <param name="id"></param>
+            <param name="alunoDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.API.V1.Controllers.AlunoController.Patch(System.Int32,SmartSchool.API.V1.Dtos.AlunoRegistrarDto)">
+            <summary>
+            Método responsável por atualizar parcialmente um aluno já existente
+            </summary>
+            <param name="id"></param>
+            <param name="alunoDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.API.V1.Controllers.AlunoController.Delete(System.Int32)">
+            <summary>
+            Método responsável por deletar um aluno
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartSchool.API.V1.Controllers.ProfessorController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:SmartSchool.API.V1.Controllers.ProfessorController.#ctor(SmartSchool.API.Data.IRepository,AutoMapper.IMapper)">
+            <summary>
+            
+            </summary>
+            <param name="repository"></param>
+            <param name="mapper"></param>
+        </member>
+        <member name="M:SmartSchool.API.V1.Controllers.ProfessorController.Get">
+            <summary>
+            Método responsável por retornar todos os professores
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.API.V1.Controllers.ProfessorController.Post(SmartSchool.API.V1.Dtos.ProfessorRegistrarDto)">
+            <summary>
+            Método responsável por criar um novo professor
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.API.V1.Controllers.ProfessorController.Put(System.Int32,SmartSchool.API.V1.Dtos.ProfessorRegistrarDto)">
+            <summary>
+            Método responsável por atualizar um professor já existente
+            </summary>
+            <param name="id"></param>
+            <param name="professorDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.API.V1.Controllers.ProfessorController.Patch(System.Int32,SmartSchool.API.V1.Dtos.ProfessorRegistrarDto)">
+            <summary>
+            Método responsável por atualizar parcialmente um professor já existente
+            </summary>
+            <param name="id"></param>
+            <param name="professorDto"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SmartSchool.API.V1.Controllers.ProfessorController.Delete(System.Int32)">
+            <summary>
+            Método responsável por deletar um aluno
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:SmartSchool.API.V1.Dtos.AlunoDto">
+            <summary>
+            DTO de retorno de Aluno
+            </summary>
+        </member>
+        <member name="P:SmartSchool.API.V1.Dtos.AlunoDto.Id">
+            <summary>
+            Identificador e chave do banco de dados
+            </summary>
+        </member>
+        <member name="P:SmartSchool.API.V1.Dtos.AlunoDto.Nome">
+            <summary>
+            Nome é o primeiro nome e o sobrenome do aluno
+            </summary>
+        </member>
+        <member name="P:SmartSchool.API.V1.Dtos.AlunoDto.Matricula">
+            <summary>
+            Código de indetificação do aluno na instituição
+            </summary>
+        </member>
+        <member name="P:SmartSchool.API.V1.Dtos.AlunoDto.Telefone">
+            <summary>
+            Telefone do aluno
+            </summary>
+        </member>
+        <member name="P:SmartSchool.API.V1.Dtos.AlunoDto.Idade">
+            <summary>
+            Idade do aluno
+            </summary>
+        </member>
+        <member name="P:SmartSchool.API.V1.Dtos.AlunoDto.DataInicio">
+            <summary>
+            Data em que o aluno ingressou na instituição
+            </summary>
+        </member>
+        <member name="P:SmartSchool.API.V1.Dtos.AlunoDto.Ativo">
+            <summary>
+            Indica se o aluno está ativo
+            </summary>
+        </member>
+        <member name="T:SmartSchool.API.V1.Dtos.AlunoRegistrarDto">
+            <summary>
+            DTO de registro de Aluno
+            </summary>
+        </member>
+        <member name="P:SmartSchool.API.V1.Dtos.AlunoRegistrarDto.Id">
+            <summary>
+            Identificador e chave do banco de dados
+            </summary>
+        </member>
+        <member name="P:SmartSchool.API.V1.Dtos.AlunoRegistrarDto.Nome">
+            <summary>
+            Primeiro nome do aluno
+            </summary>
+        </member>
+        <member name="P:SmartSchool.API.V1.Dtos.AlunoRegistrarDto.Sobrenome">
+            <summary>
+            Sobrenome do aluno
+            </summary>
+        </member>
+        <member name="P:SmartSchool.API.V1.Dtos.AlunoRegistrarDto.Matricula">
+            <summary>
+            Código de indetificação do aluno na instituição
+            </summary>
+        </member>
+        <member name="P:SmartSchool.API.V1.Dtos.AlunoRegistrarDto.Telefone">
+            <summary>
+            Telefone do aluno
+            </summary>
+        </member>
+        <member name="P:SmartSchool.API.V1.Dtos.AlunoRegistrarDto.DataNascimento">
+            <summary>
+            Data de nascimento do aluno
+            </summary>
+        </member>
+        <member name="P:SmartSchool.API.V1.Dtos.AlunoRegistrarDto.DataInicio">
+            <summary>
+            Data em que o aluno ingressou na instituição
+            </summary>
+        </member>
+        <member name="P:SmartSchool.API.V1.Dtos.AlunoRegistrarDto.DataFim">
+            <summary>
+            Data em que o aluno saiu da instituição
+            </summary>
+        </member>
+        <member name="P:SmartSchool.API.V1.Dtos.AlunoRegistrarDto.Ativo">
+            <summary>
+            Indica se o aluno está ativo
+            </summary>
+        </member>
+        <member name="T:SmartSchool.API.V1.Dtos.ProfessorDto">
+            <summary>
+            DTO de retorno de Professor
+            </summary>
+        </member>
+        <member name="P:SmartSchool.API.V1.Dtos.ProfessorDto.Id">
+            <summary>
+            Identificador e chave do banco de dados
+            </summary>
+        </member>
+        <member name="P:SmartSchool.API.V1.Dtos.ProfessorDto.Nome">
+            <summary>
+            Nome é o primeiro nome e o sobrenome do professor
+            </summary>
+        </member>
+        <member name="P:SmartSchool.API.V1.Dtos.ProfessorDto.Registro">
+            <summary>
+            Código de indetificação do professor na instituição
+            </summary>
+        </member>
+        <member name="P:SmartSchool.API.V1.Dtos.ProfessorDto.Telefone">
+            <summary>
+            Telefone do professor
+            </summary>
+        </member>
+        <member name="P:SmartSchool.API.V1.Dtos.ProfessorDto.DataInicio">
+            <summary>
+            Data em que o professor ingressou na instituição
+            </summary>
+        </member>
+        <member name="P:SmartSchool.API.V1.Dtos.ProfessorDto.Ativo">
+            <summary>
+            Indica se o professor está ativo
+            </summary>
+        </member>
+        <member name="T:SmartSchool.API.V1.Dtos.ProfessorRegistrarDto">
+            <summary>
+            DTO de registro de Professor
+            </summary>
+        </member>
+        <member name="P:SmartSchool.API.V1.Dtos.ProfessorRegistrarDto.Id">
+            <summary>
+            Identificador e chave do banco de dados
+            </summary>
+        </member>
+        <member name="P:SmartSchool.API.V1.Dtos.ProfessorRegistrarDto.Nome">
+            <summary>
+            Primeiro nome do professor
+            </summary>
+        </member>
+        <member name="P:SmartSchool.API.V1.Dtos.ProfessorRegistrarDto.Sobrenome">
+            <summary>
+            Sobrenome do professor
+            </summary>
+        </member>
+        <member name="P:SmartSchool.API.V1.Dtos.ProfessorRegistrarDto.Registro">
+            <summary>
+            Código de indetificação do professor na instituição
+            </summary>
+        </member>
+        <member name="P:SmartSchool.API.V1.Dtos.ProfessorRegistrarDto.Telefone">
+            <summary>
+            Telefone do professor
+            </summary>
+        </member>
+        <member name="P:SmartSchool.API.V1.Dtos.ProfessorRegistrarDto.DataInicio">
+            <summary>
+            Data em que o professor ingressou na instituição
+            </summary>
+        </member>
+        <member name="P:SmartSchool.API.V1.Dtos.ProfessorRegistrarDto.DataFim">
+            <summary>
+            Data em que o professor saiu da instituição
+            </summary>
+        </member>
+        <member name="P:SmartSchool.API.V1.Dtos.ProfessorRegistrarDto.Ativo">
+            <summary>
+            Indica se o professor está ativo
+            </summary>
+        </member>
+    </members>
+</doc>
