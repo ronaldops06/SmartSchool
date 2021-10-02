@@ -5,6 +5,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20211001190135_Initial.cs" />
+    <Compile Remove="Migrations\20211001190135_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20211001190831_initial.cs" />
+    <Compile Remove="Migrations\20211001190831_initial.Designer.cs" />
+    <Compile Remove="Migrations\20211001191756_initial.cs" />
+    <Compile Remove="Migrations\20211001191756_initial.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.0" />
