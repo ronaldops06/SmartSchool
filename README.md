@@ -10,7 +10,7 @@
   O padrão de arquitetura de software utilizado neste projeto foi MVC (Model-View-Controller).
 </p>
 <h3 align="left">Tecnologias</h3>
-Este projeto foi desenvolvido com a seguinte tecnologia:
+Este projeto foi desenvolvido com as seguintes tecnologias:
 <ul>
 <li><a href="https://docs.microsoft.com/pt-br/dotnet/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework">C#</a></li>
 <li><a href="https://swagger.io/">Swagger</a></li>
@@ -21,4 +21,4 @@ Este projeto foi desenvolvido com a seguinte tecnologia:
 Este projeto é uma implementação básica de uma API para gerenciamento escolar.
 <h3 align="left">Layout</h3>
 Como o objetivo deste projeto era desenvolver somente uma API, abaixo temos um exemplo de layout somente com a documentação fornecida pelo swagger.<br/><br/>
-<img src="https://github.com/ronaldops06/SmartSchool/blob/master/.github/api_swagger.png" />
+<img src="https://github.com/ronaldops06/SmartSchool/blob/main/.github/api_swagger.png" />
